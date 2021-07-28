@@ -1,3 +1,6 @@
 package names
 
-const HelloWorld string = "Hello World!"
+const (
+	HelloWorldPrefix string = "Hello, "
+	HelloWorld       string = "World!"
+)

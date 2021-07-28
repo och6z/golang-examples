@@ -7,8 +7,8 @@ import (
 )
 
 func TestNames(t *testing.T) {
-	got := names.HelloWorld
-	want := "Hello World!"
+	got := names.HelloWorldPrefix + names.HelloWorld
+	want := "Hello, World!"
 
 	if got != want {
 		t.Errorf("got %q want %q", got, want)
