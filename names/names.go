@@ -6,6 +6,6 @@ const (
 	helloWorld       string = "world!"
 )
 
-func Namesworld() string {
+func World() string {
 	return helloWorld
 }

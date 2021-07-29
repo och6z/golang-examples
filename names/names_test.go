@@ -2,7 +2,7 @@ package names
 
 import "testing"
 
-func TestNamesHelloworld(t *testing.T) {
+func TestHelloworld(t *testing.T) {
 	got := HelloWorldPrefix + helloWorld
 	want := "Hello, world!"
 
