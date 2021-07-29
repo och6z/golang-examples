@@ -8,4 +8,5 @@ import (
 
 func main() {
 	fmt.Println(names.HelloWorldPrefix + names.HelloWorld)
+	fmt.Println(names.HelloWorldPrefix + names.Namesworld())
 }

@@ -14,3 +14,11 @@ func TestNames(t *testing.T) {
 		t.Errorf("got %q want %q", got, want)
 	}
 }
+func TestNamesworld(t *testing.T) {
+	got := names.Namesworld()
+	want := "world!"
+
+	if got != want {
+		t.Errorf("got %q want %q", got, want)
+	}
+}
