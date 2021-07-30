@@ -1,9 +1,13 @@
-package cstructs
+package cstructs_test
 
-import "testing"
+import (
+	"testing"
+
+	"example.com/m/cstructs"
+)
 
 func TestHelloworld(t *testing.T) {
-	got := Hello()
+	got := cstructs.Hello()
 	want := "Hello, World!"
 
 	if got != want {
