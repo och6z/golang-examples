@@ -26,10 +26,28 @@ func TestNames(t *testing.T) {
 	})
 }
 func TestCstructs(t *testing.T) {
-	got := cstructs.Hello()
-	want := "Hello, World!"
+	t.Run("If statement", func(t *testing.T) {
+		got := cstructs.HelloIf()
+		want := "Hello, World!"
 
-	if got != want {
-		t.Errorf("got %q want %q", got, want)
-	}
+		if got != want {
+			t.Errorf("got %q want %q", got, want)
+		}
+	})
+	t.Run("If else statement", func(t *testing.T) {
+		got := cstructs.HelloIfElse()
+		want := "Hello, World!"
+
+		if got != want {
+			t.Errorf("got %q want %q", got, want)
+		}
+	})
+	t.Run("If else if statement", func(t *testing.T) {
+		got := cstructs.HelloIfElseIf()
+		want := "Hello, World!"
+
+		if got != want {
+			t.Errorf("got %q want %q", got, want)
+		}
+	})
 }
