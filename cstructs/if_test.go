@@ -48,10 +48,10 @@ func Example_ifInitializationStatement() {
 // If the expression evaluates to true, the "if" branch is executed,
 // otherwise, if present, the "else" branch is executed.
 func Example_ifElseStatement() {
-	if name := "World!"; name != "" {
-		fmt.Println(names.HelloWorldPrefix + name)
-	} else {
+	if name := "World!"; name == "" {
 		fmt.Println(names.HelloWorldPrefix + "")
+	} else {
+		fmt.Println(names.HelloWorldPrefix + name)
 	}
 	// Output: Hello, World!
 }
