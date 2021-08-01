@@ -1,4 +1,4 @@
-// the package name is the base name of its source directory
+// The package name is the base name of its source directory.
 package names
 
 // The visibility of a name outside a package is determined
@@ -12,4 +12,7 @@ const (
 
 func World() string {
 	return helloWorld
+}
+func Helloworld() string {
+	return (HelloWorldPrefix + helloWorld)
 }

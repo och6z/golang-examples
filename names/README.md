@@ -31,3 +31,15 @@ fmt.Println(HelloWorldPrefix + helloWorld)
 ```
 Hello, world!
 ```
+
+### Helloworld
+
+```golang
+fmt.Println(Helloworld())
+```
+
+ Output:
+
+```
+Hello, world!
+```

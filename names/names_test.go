@@ -17,3 +17,7 @@ func Example_helloworld() {
 	fmt.Println(HelloWorldPrefix + helloWorld)
 	// Output: Hello, world!
 }
+func ExampleHelloworld() {
+	fmt.Println(Helloworld())
+	// Output: Hello, world!
+}
