@@ -72,10 +72,10 @@ import (
 )
 
 func main() {
-	if name := "World!"; name != "" {
-		fmt.Println(names.HelloWorldPrefix + name)
-	} else {
+	if name := "World!"; name == "" {
 		fmt.Println(names.HelloWorldPrefix + "")
+	} else {
+		fmt.Println(names.HelloWorldPrefix + name)
 	}
 }
 
