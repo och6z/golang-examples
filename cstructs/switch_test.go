@@ -10,11 +10,11 @@ import (
 func ExampleSwitchTrue() {
 	switch true {
 	case i5 < 5:
-		fmt.Print(assertion)
+		fmt.Println(assertion)
 	case i5 == 5:
-		fmt.Print(assertion)
+		fmt.Println(assertion)
 	case i5 > 5:
-		fmt.Print(assertion)
+		fmt.Println(assertion)
 	}
 	// output: assertion true
 }
