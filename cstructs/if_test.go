@@ -5,7 +5,6 @@ import (
 	"testing"
 
 	"example.com/m/cstructs"
-	"example.com/m/names"
 )
 
 // "If" statements specify the conditional execution of two branches
@@ -15,7 +14,7 @@ func Example_ifStatement() {
 	if name == "" {
 		name = "World!"
 	}
-	fmt.Println(names.HelloWorldPrefix + name)
+	fmt.Println(HelloWorldPrefix + name)
 	// Output: Hello, World!
 }
 func TestHelloIf(t *testing.T) {
@@ -31,7 +30,7 @@ func TestHelloIf(t *testing.T) {
 // which executes before the expression is evaluated.
 func Example_ifInitializationStatement() {
 	if name := "World!"; name != "" {
-		fmt.Println(names.HelloWorldPrefix + name)
+		fmt.Println(HelloWorldPrefix + name)
 	}
 	// Output: Hello, World!
 }
@@ -49,9 +48,9 @@ func Example_ifInitializationStatement() {
 // otherwise, if present, the "else" branch is executed.
 func Example_ifElseStatement() {
 	if name := "World!"; name == "" {
-		fmt.Println(names.HelloWorldPrefix + "")
+		fmt.Println(HelloWorldPrefix + "")
 	} else {
-		fmt.Println(names.HelloWorldPrefix + name)
+		fmt.Println(HelloWorldPrefix + name)
 	}
 	// Output: Hello, World!
 }
@@ -68,11 +67,11 @@ func TestHelloIfElse(t *testing.T) {
 // if statement and the else statement.
 func Example_ifElseIfStatement() {
 	if name := "World!"; name == "" {
-		fmt.Println(names.HelloWorldPrefix + "")
+		fmt.Println(HelloWorldPrefix + "")
 	} else if name == "World!" {
-		fmt.Println(names.HelloWorldPrefix + name)
+		fmt.Println(HelloWorldPrefix + name)
 	} else {
-		fmt.Println(names.HelloWorldPrefix + "Golang!")
+		fmt.Println(HelloWorldPrefix + "Golang!")
 	}
 	// Output: Hello, World!
 }

@@ -1,37 +1,33 @@
 package cstructs
 
-import (
-	"example.com/m/names"
-)
-
 func HelloIf() string {
 	name := ""
 	if name == "" {
 		name = "World!"
 	}
-	return names.HelloWorldPrefix + name
+	return HelloWorldPrefix + name
 }
 
 // func HelloIfInitialization() string {
 // 	if name := "World!"; name != "" {
-// 		return names.HelloWorldPrefix + name
+// 		return HelloWorldPrefix + name
 // 	}
 // }
 func HelloIfElse() string {
 	name := "World!"
 	if name == "" {
-		return names.HelloWorldPrefix + ""
+		return HelloWorldPrefix + ""
 	} else {
-		return names.HelloWorldPrefix + name
+		return HelloWorldPrefix + name
 	}
 }
 func HelloIfElseIf() string {
 	name := "World!"
 	if name == "" {
-		return names.HelloWorldPrefix + ""
+		return HelloWorldPrefix + ""
 	} else if name == "World!" {
-		return names.HelloWorldPrefix + name
+		return HelloWorldPrefix + name
 	} else {
-		return names.HelloWorldPrefix + "Golang!"
+		return HelloWorldPrefix + "Golang!"
 	}
 }
