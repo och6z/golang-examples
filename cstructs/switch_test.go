@@ -26,3 +26,22 @@ func TestSwitchTrue(t *testing.T) {
 		t.Errorf("got %q want %q", got, want)
 	}
 }
+func ExampleSwitch() {
+	switch {
+	case i5 < 5:
+		fmt.Println(assertion)
+	case i5 == 5:
+		fmt.Println(assertion)
+	case i5 > 5:
+		fmt.Println(assertion)
+	}
+	// output: assertion true
+}
+func TestSwitch(t *testing.T) {
+	got := cstructs.Switch()
+	want := "assertion true"
+
+	if got != want {
+		t.Errorf("got %q want %q", got, want)
+	}
+}

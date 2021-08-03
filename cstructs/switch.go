@@ -11,3 +11,14 @@ func SwitchTrue() string {
 	}
 	return assertion
 }
+func Switch() string {
+	switch {
+	case i5 < 5:
+		assertion = assert()
+	case i5 == 5:
+		assertion = assert()
+	case i5 > 5:
+		assertion = assert()
+	}
+	return assertion
+}
