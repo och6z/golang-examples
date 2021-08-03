@@ -8,3 +8,9 @@ import (
 var (
 	HelloWorldPrefix = cstructs.HelloWorldPrefix
 )
+
+// Switch
+var (
+	i5        = cstructs.I5
+	assertion = "assertion true"
+)
