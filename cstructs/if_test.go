@@ -10,7 +10,7 @@ import (
 // "If" statements specify the conditional execution of two branches
 // according to the value of a boolean expression.
 func Example_ifStatement() {
-	name := ""
+	var name = ""
 	if name == "" {
 		name = "World!"
 	}
