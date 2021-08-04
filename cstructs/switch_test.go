@@ -91,3 +91,24 @@ func TestSwitchExpressionDefault(t *testing.T) {
 		t.Errorf("got %q want %q", got, want)
 	}
 }
+func ExampleSwitchExpressionLeftToRightDefault() {
+	switch i5 {
+	case 0, 1, 2, 3:
+		fmt.Println(assertion)
+	case 4, 5, 6, 7:
+		fmt.Println(assertion)
+	case 8, 9:
+		fmt.Println(assertion)
+	default:
+		fmt.Println("default")
+	}
+	// output: assertion true
+}
+func TestExpressionSwitchLeftToRightDefault(t *testing.T) {
+	got := cstructs.SwitchExpressionLeftToRightDefault()
+	want := "assertion true"
+
+	if got != want {
+		t.Errorf("got %q want %q", got, want)
+	}
+}
