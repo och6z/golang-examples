@@ -45,3 +45,49 @@ func TestSwitch(t *testing.T) {
 		t.Errorf("got %q want %q", got, want)
 	}
 }
+func ExampleSwitchInitializationTrue() {
+	switch x := 5; true {
+	case i5 < x:
+		fmt.Println(assertion)
+	case i5 == x:
+		fmt.Println(assertion)
+	case i5 > x:
+		fmt.Println(assertion)
+	}
+	// output: assertion true
+}
+func TestSwitchInitializationTrue(t *testing.T) {
+	got := cstructs.SwitchInitializationTrue()
+	want := "assertion true"
+
+	if got != want {
+		t.Errorf("got %q want %q", got, want)
+	}
+}
+func ExampleSwitchExpressionDefault() {
+	switch i5 {
+	case 0:
+		fmt.Println(assertion)
+	case 1:
+		fmt.Println(assertion)
+	case 2:
+		fmt.Println(assertion)
+	case 3:
+		fmt.Println(assertion)
+	case 4:
+		fmt.Println(assertion)
+	case 5:
+		fmt.Println(assertion)
+	default:
+		fmt.Println("default")
+	}
+	// output: assertion true
+}
+func TestSwitchExpressionDefault(t *testing.T) {
+	got := cstructs.SwitchExpressionDefault()
+	want := "assertion true"
+
+	if got != want {
+		t.Errorf("got %q want %q", got, want)
+	}
+}
