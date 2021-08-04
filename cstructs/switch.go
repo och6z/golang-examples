@@ -75,10 +75,6 @@ func SwitchExpressionTopToBottomDefault() string {
 		assertion = assert()
 	case 5:
 		assertion = assert()
-	case 6:
-	case 7:
-	case 8:
-	case 9:
 	default:
 		assertion = "assertion default"
 	}
