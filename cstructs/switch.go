@@ -65,3 +65,22 @@ func SwitchExpressionLeftToRightDefault() string {
 	}
 	return assertion
 }
+func SwitchExpressionTopToBottomDefault() string {
+	switch i5 {
+	case 0:
+	case 1:
+	case 2:
+	case 3:
+	case 4:
+		assertion = assert()
+	case 5:
+		assertion = assert()
+	case 6:
+	case 7:
+	case 8:
+	case 9:
+	default:
+		assertion = "assertion default"
+	}
+	return assertion
+}

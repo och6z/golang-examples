@@ -102,3 +102,28 @@ func TestExpressionSwitchLeftToRightDefault(t *testing.T) {
 
 	assertCorrectMessage(got, want, t)
 }
+func ExampleSwitchExpressionTopToBottomDefault() {
+	switch i5 {
+	case 0:
+	case 1:
+	case 2:
+	case 3:
+	case 4:
+		fmt.Println(assertion)
+	case 5:
+		fmt.Println(assertion)
+	case 6:
+	case 7:
+	case 8:
+	case 9:
+	default:
+		fmt.Println("assertion default")
+	}
+	// output: assertion true
+}
+func TestSwitchExpressionTopToBottomDefault(t *testing.T) {
+	got := cstructs.SwitchExpressionTopToBottomDefault()
+	want := "assertion true"
+
+	assertCorrectMessage(got, want, t)
+}
