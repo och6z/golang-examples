@@ -22,9 +22,7 @@ func TestSwitchTrue(t *testing.T) {
 	got := cstructs.SwitchTrue()
 	want := "assertion true"
 
-	if got != want {
-		t.Errorf("got %q want %q", got, want)
-	}
+	assertCorrectMessage(got, want, t)
 }
 func ExampleSwitch() {
 	switch {
@@ -41,9 +39,7 @@ func TestSwitch(t *testing.T) {
 	got := cstructs.Switch()
 	want := "assertion true"
 
-	if got != want {
-		t.Errorf("got %q want %q", got, want)
-	}
+	assertCorrectMessage(got, want, t)
 }
 func ExampleSwitchInitializationTrue() {
 	switch x := 5; true {
@@ -60,9 +56,7 @@ func TestSwitchInitializationTrue(t *testing.T) {
 	got := cstructs.SwitchInitializationTrue()
 	want := "assertion true"
 
-	if got != want {
-		t.Errorf("got %q want %q", got, want)
-	}
+	assertCorrectMessage(got, want, t)
 }
 func ExampleSwitchExpressionDefault() {
 	switch i5 {
@@ -79,7 +73,7 @@ func ExampleSwitchExpressionDefault() {
 	case 5:
 		fmt.Println(assertion)
 	default:
-		fmt.Println("default")
+		fmt.Println("assertion default")
 	}
 	// output: assertion true
 }
@@ -87,9 +81,7 @@ func TestSwitchExpressionDefault(t *testing.T) {
 	got := cstructs.SwitchExpressionDefault()
 	want := "assertion true"
 
-	if got != want {
-		t.Errorf("got %q want %q", got, want)
-	}
+	assertCorrectMessage(got, want, t)
 }
 func ExampleSwitchExpressionLeftToRightDefault() {
 	switch i5 {
@@ -100,7 +92,7 @@ func ExampleSwitchExpressionLeftToRightDefault() {
 	case 8, 9:
 		fmt.Println(assertion)
 	default:
-		fmt.Println("default")
+		fmt.Println("assertion default")
 	}
 	// output: assertion true
 }
@@ -108,7 +100,5 @@ func TestExpressionSwitchLeftToRightDefault(t *testing.T) {
 	got := cstructs.SwitchExpressionLeftToRightDefault()
 	want := "assertion true"
 
-	if got != want {
-		t.Errorf("got %q want %q", got, want)
-	}
+	assertCorrectMessage(got, want, t)
 }

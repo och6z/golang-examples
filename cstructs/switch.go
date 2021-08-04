@@ -48,7 +48,7 @@ func SwitchExpressionDefault() string {
 	case 5:
 		assertion = assert()
 	default:
-		assertion = "default"
+		assertion = "assertion default"
 	}
 	return assertion
 }
@@ -61,7 +61,7 @@ func SwitchExpressionLeftToRightDefault() string {
 	case 8, 9:
 		assertion = assert()
 	default:
-		assertion = "default"
+		assertion = "assertion default"
 	}
 	return assertion
 }
