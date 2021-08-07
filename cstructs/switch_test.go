@@ -96,7 +96,7 @@ func ExampleSwitchExpressionLeftToRightDefault() {
 	}
 	// output: assertion true
 }
-func TestExpressionSwitchLeftToRightDefault(t *testing.T) {
+func TestSwitchExpressionLeftToRightDefault(t *testing.T) {
 	got := cstructs.SwitchExpressionLeftToRightDefault()
 	want := "assertion true"
 
