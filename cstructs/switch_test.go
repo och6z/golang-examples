@@ -142,12 +142,16 @@ func ExampleSwitchExpressionFallthroughDefault() {
 		_ = dummy
 		fallthrough
 	case 4:
+		dummy := 0
+		_ = dummy
 		fmt.Println(assertion)
 	case 5:
 		dummy := 0
 		_ = dummy
 		fallthrough
 	default:
+		dummy := 0
+		_ = dummy
 		fmt.Println("assertion default")
 	}
 	// output: assertion default

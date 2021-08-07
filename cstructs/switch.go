@@ -99,12 +99,16 @@ func SwitchExpressionFallthroughDefault() string {
 		_ = dummy
 		fallthrough
 	case 4:
+		dummy := 0
+		_ = dummy
 		assertion = assert()
 	case 5:
 		dummy := 0
 		_ = dummy
 		fallthrough
 	default:
+		dummy := 0
+		_ = dummy
 		assertion = "assertion default"
 	}
 	return assertion
