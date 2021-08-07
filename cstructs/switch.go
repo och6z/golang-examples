@@ -1,5 +1,7 @@
 package cstructs
 
+import "fmt"
+
 func SwitchTrue() string {
 	switch true {
 	case i5 < 5:
@@ -110,6 +112,45 @@ func SwitchExpressionFallthroughDefault() string {
 		dummy := 0
 		_ = dummy
 		assertion = "assertion default"
+	}
+	return assertion
+}
+func SwitchVariableExpressionFallthroughDefault() string {
+	count := 0
+	switch i5 {
+	case 0:
+		count = count + 1
+		fallthrough
+	case 1:
+		count = count + 1
+		fallthrough
+	case 2:
+		count = count + 1
+		fallthrough
+	case 3:
+		count = count + 1
+		fallthrough
+	case 4:
+		count = count + 1
+		assertion = fmt.Sprintf(assert(), "\n%d\n", count)
+	case 5:
+		count = count + 1
+		fallthrough
+	case 6:
+		count = count + 1
+		fallthrough
+	case 7:
+		count = count + 1
+		fallthrough
+	case 8:
+		count = count + 1
+		fallthrough
+	case 9:
+		count = count + 1
+		fallthrough
+	default:
+		count = count + 1
+		assertion = fmt.Sprintf("assertion default\n%d\n", count)
 	}
 	return assertion
 }

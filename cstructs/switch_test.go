@@ -162,3 +162,49 @@ func TestSwitchExpressionFallthroughDefault(t *testing.T) {
 
 	assertCorrectMessage(got, want, t)
 }
+func ExampleSwitchVariableExpressionFallthroughDefault() {
+	count := 0
+	switch i5 {
+	case 0:
+		count = count + 1
+		fallthrough
+	case 1:
+		count = count + 1
+		fallthrough
+	case 2:
+		count = count + 1
+		fallthrough
+	case 3:
+		count = count + 1
+		fallthrough
+	case 4:
+		count = count + 1
+		fmt.Printf(assertion, "\n%d\n", count)
+	case 5:
+		count = count + 1
+		fallthrough
+	case 6:
+		count = count + 1
+		fallthrough
+	case 7:
+		count = count + 1
+		fallthrough
+	case 8:
+		count = count + 1
+		fallthrough
+	case 9:
+		count = count + 1
+		fallthrough
+	default:
+		count = count + 1
+		fmt.Printf("assertion default\n%d\n", count)
+	}
+	// output: assertion default
+	// 6
+}
+func TestSwitchVariableExpressionFallthroughDefault(t *testing.T) {
+	got := cstructs.SwitchVariableExpressionFallthroughDefault()
+	want := "assertion default\n6\n"
+
+	assertCorrectMessage(got, want, t)
+}
