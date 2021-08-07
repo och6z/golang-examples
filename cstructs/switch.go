@@ -80,3 +80,32 @@ func SwitchExpressionTopToBottomDefault() string {
 	}
 	return assertion
 }
+func SwitchExpressionFallthroughDefault() string {
+	switch i5 {
+	case 0:
+		dummy := 0
+		_ = dummy
+		fallthrough
+	case 1:
+		dummy := 0
+		_ = dummy
+		fallthrough
+	case 2:
+		dummy := 0
+		_ = dummy
+		fallthrough
+	case 3:
+		dummy := 0
+		_ = dummy
+		fallthrough
+	case 4:
+		assertion = assert()
+	case 5:
+		dummy := 0
+		_ = dummy
+		fallthrough
+	default:
+		assertion = "assertion default"
+	}
+	return assertion
+}

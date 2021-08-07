@@ -123,3 +123,38 @@ func TestSwitchExpressionTopToBottomDefault(t *testing.T) {
 
 	assertCorrectMessage(got, want, t)
 }
+func ExampleSwitchExpressionFallthroughDefault() {
+	switch i5 {
+	case 0:
+		dummy := 0
+		_ = dummy
+		fallthrough
+	case 1:
+		dummy := 0
+		_ = dummy
+		fallthrough
+	case 2:
+		dummy := 0
+		_ = dummy
+		fallthrough
+	case 3:
+		dummy := 0
+		_ = dummy
+		fallthrough
+	case 4:
+		fmt.Println(assertion)
+	case 5:
+		dummy := 0
+		_ = dummy
+		fallthrough
+	default:
+		fmt.Println("assertion default")
+	}
+	// output: assertion default
+}
+func TestSwitchExpressionFallthroughDefault(t *testing.T) {
+	got := cstructs.SwitchExpressionFallthroughDefault()
+	want := "assertion default"
+
+	assertCorrectMessage(got, want, t)
+}
