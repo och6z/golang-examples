@@ -15,6 +15,7 @@ var (
 var (
 	i5        = cstructs.I5
 	assertion = "assertion true"
+	hello     = cstructs.Hello
 )
 
 func assertCorrectMessage(got, want string, t *testing.T) {

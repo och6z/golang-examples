@@ -18,4 +18,6 @@ var (
 	i5        = 5
 	I5        = i5
 	assertion = "assertion true"
+	hello     = "hello"
+	Hello     = hello
 )
