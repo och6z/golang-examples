@@ -227,3 +227,20 @@ func TestSwitchExpressionHelloDefault(t *testing.T) {
 
 	assertCorrectMessage(got, want, t)
 }
+func ExampleSwitchExpressionDefaultVariable() {
+	fired := false
+	switch i := i5 + 2; i {
+	case i7:
+		fired = true
+	default:
+		fired = false
+	}
+	fmt.Println(fired)
+	// output: true
+}
+func TestSwitchExpressionDefaultVariable(t *testing.T) {
+	got := cstructs.SwitchExpressionDefaultVariable()
+	want := true
+
+	assertCorrectMessageBool(got, want, t)
+}

@@ -167,3 +167,13 @@ func SwitchExpressionHelloDefault() string {
 	}
 	return assertion
 }
+func SwitchExpressionDefaultVariable() bool {
+	fired := false
+	switch i := i5 + 2; i {
+	case i7:
+		fired = true
+	default:
+		fired = false
+	}
+	return fired
+}
