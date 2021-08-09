@@ -78,6 +78,17 @@ if name := "World!"; name == "" {
 Hello, World!
 ```
 
+### Variables
+
+```golang
+var (
+    i5        = 5
+    assertion = "assertion true"
+    hello     = "hello"
+    i7        = 7
+)
+```
+
 ### SwitchTrue
 
 ```golang
