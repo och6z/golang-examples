@@ -149,8 +149,6 @@ case 3:
     fmt.Println(assertion)
 case 4:
     fmt.Println(assertion)
-case 5:
-    fmt.Println(assertion)
 default:
     fmt.Println("assertion default")
 }
@@ -159,7 +157,7 @@ default:
  Output:
 
 ```
-assertion true
+assertion default
 ```
 
 ### SwitchExpressionLeftToRightDefault

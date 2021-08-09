@@ -47,8 +47,6 @@ func SwitchExpressionDefault() string {
 		assertion = assert()
 	case 4:
 		assertion = assert()
-	case 5:
-		assertion = assert()
 	default:
 		assertion = "assertion default"
 	}
