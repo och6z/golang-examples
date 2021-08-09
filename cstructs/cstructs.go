@@ -20,4 +20,6 @@ var (
 	assertion = "assertion true"
 	hello     = "hello"
 	Hello     = hello
+	i7        = 7
+	I7        = i7
 )
