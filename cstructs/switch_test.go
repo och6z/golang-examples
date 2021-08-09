@@ -208,3 +208,22 @@ func TestSwitchVariableExpressionFallthroughDefault(t *testing.T) {
 
 	assertCorrectMessage(got, want, t)
 }
+func ExampleSwitchExpressionHelloDefault() {
+	switch hello {
+	case "wowie":
+		fmt.Println(assertion)
+	case "hello":
+		fmt.Println(assertion)
+	case "jumpn":
+		fmt.Println(assertion)
+	default:
+		fmt.Println("assertion default")
+	}
+	// output: assertion true
+}
+func TestSwitchExpressionHelloDefault(t *testing.T) {
+	got := cstructs.SwitchExpressionHelloDefault()
+	want := "assertion true"
+
+	assertCorrectMessage(got, want, t)
+}

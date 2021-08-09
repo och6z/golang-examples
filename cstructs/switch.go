@@ -154,3 +154,16 @@ func SwitchVariableExpressionFallthroughDefault() string {
 	}
 	return assertion
 }
+func SwitchExpressionHelloDefault() string {
+	switch hello {
+	case "wowie":
+		assertion = assert()
+	case "hello":
+		assertion = assert()
+	case "jumpn":
+		assertion = assert()
+	default:
+		assertion = "assertion default"
+	}
+	return assertion
+}
