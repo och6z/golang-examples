@@ -177,3 +177,11 @@ func SwitchExpressionDefaultVariable() bool {
 	}
 	return fired
 }
+func SwitchDefault() bool {
+	fired := false
+	switch {
+	default:
+		fired = true
+	}
+	return fired
+}

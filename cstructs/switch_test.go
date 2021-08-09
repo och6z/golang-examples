@@ -244,3 +244,18 @@ func TestSwitchExpressionDefaultVariable(t *testing.T) {
 
 	assertCorrectMessageBool(got, want, t)
 }
+func ExampleSwitchDefault() {
+	fired := false
+	switch {
+	default:
+		fired = true
+	}
+	fmt.Println(fired)
+	// output: true
+}
+func TestSwitchDefault(t *testing.T) {
+	got := cstructs.SwitchDefault()
+	want := true
+
+	assertCorrectMessageBool(got, want, t)
+}
