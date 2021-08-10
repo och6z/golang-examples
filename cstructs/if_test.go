@@ -21,3 +21,17 @@ func TestIfTrue(t *testing.T) {
 
 	assertCorrectMessageInt(got, want, t)
 }
+func ExampleIfFalse() {
+	count := 0
+	if false {
+		count = count + 1
+	}
+	fmt.Println(count)
+	// output: 0
+}
+func TestIfFalse(t *testing.T) {
+	got := cstructs.IfFalse()
+	want := 0
+
+	assertCorrectMessageInt(got, want, t)
+}
