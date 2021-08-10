@@ -11,6 +11,12 @@ var (
 	HelloWorldPrefix = cstructs.HelloWorldPrefix
 )
 
+func assertCorrectMessageInt(got, want int, t *testing.T) {
+	if got != want {
+		t.Errorf("got %d want %d", got, want)
+	}
+}
+
 // Switch
 var (
 	i5        = cstructs.I5
