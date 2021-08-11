@@ -2,80 +2,162 @@
 
 ## Examples
 
-### IfStatement
-
-"If" statements specify the conditional execution of two branches
-according to the value of a boolean expression.
+### IfTrue
 
 ```golang
-var name = ""
-if name == "" {
-    name = "World!"
+count := 0
+if true {
+    count = count + 1
 }
-fmt.Println(HelloWorldPrefix + name)
+fmt.Println(count)
 ```
 
  Output:
 
 ```
-Hello, World!
+1
 ```
 
-### IfInitializationStatement
-
-The expression may be preceded by a simple statement,
-which executes before the expression is evaluated.
+### IfFalse
 
 ```golang
-if name := "World!"; name != "" {
-    fmt.Println(HelloWorldPrefix + name)
+count := 0
+if false {
+    count = count + 1
 }
+fmt.Println(count)
 ```
 
  Output:
 
 ```
-Hello, World!
+0
 ```
 
-### IfElseStatement
-
-If the expression evaluates to true, the "if" branch is executed,
-otherwise, if present, the "else" branch is executed.
+### IfInitializationTrue
 
 ```golang
-if name := "World!"; name == "" {
-    fmt.Println(HelloWorldPrefix + "")
+count := 0
+if one := 1; true {
+    count = count + one
+}
+fmt.Println(count)
+```
+
+ Output:
+
+```
+1
+```
+
+### IfInitializationFalse
+
+```golang
+count := 0
+if one := 1; false {
+    count = count + one
+}
+fmt.Println(count)
+```
+
+ Output:
+
+```
+0
+```
+
+### IfExpression
+
+```golang
+count := 0
+if i5 < i7 {
+    count = count + 1
+}
+fmt.Println(count)
+```
+
+ Output:
+
+```
+1
+```
+
+### IfElseTrue
+
+```golang
+count := 0
+if true {
+    count = count + 1
 } else {
-    fmt.Println(HelloWorldPrefix + name)
+    count = count - 1
 }
+fmt.Println(count)
 ```
 
  Output:
 
 ```
-Hello, World!
+1
 ```
 
-### IfElseIfStatement
-
-The else if statement will be placed between the
-if statement and the else statement.
+### IfElseFalse
 
 ```golang
-if name := "World!"; name == "" {
-    fmt.Println(HelloWorldPrefix + "")
-} else if name == "World!" {
-    fmt.Println(HelloWorldPrefix + name)
+count := 0
+if false {
+    count = count + 1
 } else {
-    fmt.Println(HelloWorldPrefix + "Golang!")
+    count = count - 1
 }
+fmt.Println(count)
 ```
 
  Output:
 
 ```
-Hello, World!
+-1
+```
+
+### IfElseInitializationFalse
+
+```golang
+count := 0
+if t := 1; false {
+    count = count + 1
+    _ = t
+    t := 7
+    _ = t
+} else {
+    count = count - t
+}
+fmt.Println(count)
+```
+
+ Output:
+
+```
+-1
+```
+
+### IfElseVariableFalse
+
+```golang
+count := 0
+t := 1
+if false {
+    count = count + 1
+    t := 7
+    _ = t
+} else {
+    count = count - t
+}
+fmt.Println(count)
+```
+
+ Output:
+
+```
+-1
 ```
 
 ### Variables
