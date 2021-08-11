@@ -65,3 +65,15 @@ func IfElseInitializationFalse() int {
 	}
 	return count
 }
+func IfElseVariableFalse() int {
+	count := 0
+	t := 1
+	if false {
+		count = count + 1
+		t := 7
+		_ = t
+	} else {
+		count = count - t
+	}
+	return count
+}
