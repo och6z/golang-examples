@@ -93,3 +93,19 @@ func TestIfTrueElse(t *testing.T) {
 
 	assertCorrectMessageInt(got, want, t)
 }
+func ExampleIfFalseElse() {
+	count := 0
+	if false {
+		count = count + 1
+	} else {
+		count = count - 1
+	}
+	fmt.Println(count)
+	// output: -1
+}
+func TestIfFalseElse(t *testing.T) {
+	got := cstructs.IfFalseElse()
+	want := -1
+
+	assertCorrectMessageInt(got, want, t)
+}

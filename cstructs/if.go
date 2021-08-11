@@ -44,3 +44,12 @@ func IfTrueElse() int {
 	}
 	return count
 }
+func IfFalseElse() int {
+	count := 0
+	if false {
+		count = count + 1
+	} else {
+		count = count - 1
+	}
+	return count
+}
