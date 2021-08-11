@@ -14,3 +14,10 @@ func IfFalse() int {
 	}
 	return count
 }
+func IfInitializationTrue() int {
+	count := 0
+	if one := 1; true {
+		count = count + one
+	}
+	return count
+}

@@ -35,3 +35,17 @@ func TestIfFalse(t *testing.T) {
 
 	assertCorrectMessageInt(got, want, t)
 }
+func ExampleIfInitializationTrue() {
+	count := 0
+	if one := 1; true {
+		count = count + one
+	}
+	fmt.Println(count)
+	// output: 1
+}
+func TestIfInitializationTrue(t *testing.T) {
+	got := cstructs.IfInitializationTrue()
+	want := 1
+
+	assertCorrectMessageInt(got, want, t)
+}
