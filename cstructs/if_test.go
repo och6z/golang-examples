@@ -77,7 +77,7 @@ func TestIfExpression(t *testing.T) {
 
 	assertCorrectMessageInt(got, want, t)
 }
-func ExampleIfTrueElse() {
+func ExampleIfElseTrue() {
 	count := 0
 	if true {
 		count = count + 1
@@ -87,13 +87,13 @@ func ExampleIfTrueElse() {
 	fmt.Println(count)
 	// output: 1
 }
-func TestIfTrueElse(t *testing.T) {
-	got := cstructs.IfTrueElse()
+func TestIfElseTrue(t *testing.T) {
+	got := cstructs.IfElseTrue()
 	want := 1
 
 	assertCorrectMessageInt(got, want, t)
 }
-func ExampleIfFalseElse() {
+func ExampleIfElseFalse() {
 	count := 0
 	if false {
 		count = count + 1
@@ -103,8 +103,8 @@ func ExampleIfFalseElse() {
 	fmt.Println(count)
 	// output: -1
 }
-func TestIfFalseElse(t *testing.T) {
-	got := cstructs.IfFalseElse()
+func TestIfElseFalse(t *testing.T) {
+	got := cstructs.IfElseFalse()
 	want := -1
 
 	assertCorrectMessageInt(got, want, t)

@@ -35,7 +35,7 @@ func IfExpression() int {
 	}
 	return count
 }
-func IfTrueElse() int {
+func IfElseTrue() int {
 	count := 0
 	if true {
 		count = count + 1
@@ -44,7 +44,7 @@ func IfTrueElse() int {
 	}
 	return count
 }
-func IfFalseElse() int {
+func IfElseFalse() int {
 	count := 0
 	if false {
 		count = count + 1
