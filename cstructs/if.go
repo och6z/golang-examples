@@ -35,3 +35,12 @@ func IfExpression() int {
 	}
 	return count
 }
+func IfTrueElse() int {
+	count := 0
+	if true {
+		count = count + 1
+	} else {
+		count = count - 1
+	}
+	return count
+}
