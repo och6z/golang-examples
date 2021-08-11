@@ -21,3 +21,10 @@ func IfInitializationTrue() int {
 	}
 	return count
 }
+func IfInitializationFalse() int {
+	count := 0
+	if one := 1; false {
+		count = count + one
+	}
+	return count
+}
