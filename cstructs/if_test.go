@@ -63,3 +63,17 @@ func TestIfInitializationFalse(t *testing.T) {
 
 	assertCorrectMessageInt(got, want, t)
 }
+func ExampleIfExpression() {
+	count := 0
+	if i5 < i7 {
+		count = count + 1
+	}
+	fmt.Println(count)
+	// output: 1
+}
+func TestIfExpression(t *testing.T) {
+	got := cstructs.IfExpression()
+	want := 1
+
+	assertCorrectMessageInt(got, want, t)
+}

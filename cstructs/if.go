@@ -28,3 +28,10 @@ func IfInitializationFalse() int {
 	}
 	return count
 }
+func IfExpression() int {
+	count := 0
+	if i5 < i7 {
+		count = count + 1
+	}
+	return count
+}
