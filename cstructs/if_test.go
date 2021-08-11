@@ -109,3 +109,22 @@ func TestIfElseFalse(t *testing.T) {
 
 	assertCorrectMessageInt(got, want, t)
 }
+func ExampleIfElseInitializationFalse() {
+	count := 0
+	if t := 1; false {
+		count = count + 1
+		_ = t
+		t := 7
+		_ = t
+	} else {
+		count = count - t
+	}
+	fmt.Println(count)
+	// output: -1
+}
+func TestIfElseInitializationFalse(t *testing.T) {
+	got := cstructs.IfElseInitializationFalse()
+	want := -1
+
+	assertCorrectMessageInt(got, want, t)
+}
