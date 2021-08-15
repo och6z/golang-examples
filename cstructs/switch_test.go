@@ -18,12 +18,14 @@ func ExampleSwitchTrue() {
 	}
 	// output: assertion true
 }
+
 func TestSwitchTrue(t *testing.T) {
 	got := cstructs.SwitchTrue()
 	want := "assertion true"
 
 	assertCorrectMessage(got, want, t)
 }
+
 func ExampleSwitch() {
 	switch {
 	case i5 < 5:
@@ -35,12 +37,14 @@ func ExampleSwitch() {
 	}
 	// output: assertion true
 }
+
 func TestSwitch(t *testing.T) {
 	got := cstructs.Switch()
 	want := "assertion true"
 
 	assertCorrectMessage(got, want, t)
 }
+
 func ExampleSwitchInitializationTrue() {
 	switch x := 5; true {
 	case i5 < x:
@@ -52,12 +56,14 @@ func ExampleSwitchInitializationTrue() {
 	}
 	// output: assertion true
 }
+
 func TestSwitchInitializationTrue(t *testing.T) {
 	got := cstructs.SwitchInitializationTrue()
 	want := "assertion true"
 
 	assertCorrectMessage(got, want, t)
 }
+
 func ExampleSwitchExpressionDefault() {
 	switch i5 {
 	case 0:
@@ -75,12 +81,14 @@ func ExampleSwitchExpressionDefault() {
 	}
 	// output: assertion default
 }
+
 func TestSwitchExpressionDefault(t *testing.T) {
 	got := cstructs.SwitchExpressionDefault()
 	want := "assertion default"
 
 	assertCorrectMessage(got, want, t)
 }
+
 func ExampleSwitchExpressionLeftToRightDefault() {
 	switch i5 {
 	case 0, 1, 2, 3:
@@ -94,12 +102,14 @@ func ExampleSwitchExpressionLeftToRightDefault() {
 	}
 	// output: assertion true
 }
+
 func TestSwitchExpressionLeftToRightDefault(t *testing.T) {
 	got := cstructs.SwitchExpressionLeftToRightDefault()
 	want := "assertion true"
 
 	assertCorrectMessage(got, want, t)
 }
+
 func ExampleSwitchExpressionTopToBottomDefault() {
 	switch i5 {
 	case 0:
@@ -115,12 +125,14 @@ func ExampleSwitchExpressionTopToBottomDefault() {
 	}
 	// output: assertion true
 }
+
 func TestSwitchExpressionTopToBottomDefault(t *testing.T) {
 	got := cstructs.SwitchExpressionTopToBottomDefault()
 	want := "assertion true"
 
 	assertCorrectMessage(got, want, t)
 }
+
 func ExampleSwitchExpressionFallthroughDefault() {
 	switch i5 {
 	case 0:
@@ -154,12 +166,14 @@ func ExampleSwitchExpressionFallthroughDefault() {
 	}
 	// output: assertion default
 }
+
 func TestSwitchExpressionFallthroughDefault(t *testing.T) {
 	got := cstructs.SwitchExpressionFallthroughDefault()
 	want := "assertion default"
 
 	assertCorrectMessage(got, want, t)
 }
+
 func ExampleSwitchVariableExpressionFallthroughDefault() {
 	count := 0
 	switch i5 {
@@ -200,12 +214,14 @@ func ExampleSwitchVariableExpressionFallthroughDefault() {
 	// output: assertion default
 	// 6
 }
+
 func TestSwitchVariableExpressionFallthroughDefault(t *testing.T) {
 	got := cstructs.SwitchVariableExpressionFallthroughDefault()
 	want := "assertion default\n6\n"
 
 	assertCorrectMessage(got, want, t)
 }
+
 func ExampleSwitchExpressionHelloDefault() {
 	switch hello {
 	case "wowie":
@@ -219,12 +235,14 @@ func ExampleSwitchExpressionHelloDefault() {
 	}
 	// output: assertion true
 }
+
 func TestSwitchExpressionHelloDefault(t *testing.T) {
 	got := cstructs.SwitchExpressionHelloDefault()
 	want := "assertion true"
 
 	assertCorrectMessage(got, want, t)
 }
+
 func ExampleSwitchExpressionDefaultVariable() {
 	fired := false
 	switch i := i5 + 2; i {
@@ -236,12 +254,14 @@ func ExampleSwitchExpressionDefaultVariable() {
 	fmt.Println(fired)
 	// output: true
 }
+
 func TestSwitchExpressionDefaultVariable(t *testing.T) {
 	got := cstructs.SwitchExpressionDefaultVariable()
 	want := true
 
 	assertCorrectMessageBool(got, want, t)
 }
+
 func ExampleSwitchDefault() {
 	fired := false
 	switch {
@@ -251,6 +271,7 @@ func ExampleSwitchDefault() {
 	fmt.Println(fired)
 	// output: true
 }
+
 func TestSwitchDefault(t *testing.T) {
 	got := cstructs.SwitchDefault()
 	want := true

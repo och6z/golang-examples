@@ -30,6 +30,7 @@ func assertCorrectMessage(got, want string, t *testing.T) {
 		t.Errorf("got %q want %q", got, want)
 	}
 }
+
 func assertCorrectMessageBool(got, want bool, t *testing.T) {
 	if got != want {
 		t.Errorf("got %t want %t", got, want)

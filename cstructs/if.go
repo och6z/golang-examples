@@ -7,6 +7,7 @@ func IfTrue() int {
 	}
 	return count
 }
+
 func IfFalse() int {
 	count := 0
 	if false {
@@ -14,6 +15,7 @@ func IfFalse() int {
 	}
 	return count
 }
+
 func IfInitializationTrue() int {
 	count := 0
 	if one := 1; true {
@@ -21,6 +23,7 @@ func IfInitializationTrue() int {
 	}
 	return count
 }
+
 func IfInitializationFalse() int {
 	count := 0
 	if one := 1; false {
@@ -28,6 +31,7 @@ func IfInitializationFalse() int {
 	}
 	return count
 }
+
 func IfExpression() int {
 	count := 0
 	if i5 < i7 {
@@ -35,6 +39,7 @@ func IfExpression() int {
 	}
 	return count
 }
+
 func IfElseTrue() int {
 	count := 0
 	if true {
@@ -44,6 +49,7 @@ func IfElseTrue() int {
 	}
 	return count
 }
+
 func IfElseFalse() int {
 	count := 0
 	if false {
@@ -53,6 +59,7 @@ func IfElseFalse() int {
 	}
 	return count
 }
+
 func IfElseInitializationFalse() int {
 	count := 0
 	if t := 1; false {
@@ -65,6 +72,7 @@ func IfElseInitializationFalse() int {
 	}
 	return count
 }
+
 func IfElseVariableFalse() int {
 	count := 0
 	t := 1

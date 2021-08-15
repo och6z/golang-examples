@@ -15,12 +15,14 @@ func ExampleIfTrue() {
 	fmt.Println(count)
 	// output: 1
 }
+
 func TestIfTrue(t *testing.T) {
 	got := cstructs.IfTrue()
 	want := 1
 
 	assertCorrectMessageInt(got, want, t)
 }
+
 func ExampleIfFalse() {
 	count := 0
 	if false {
@@ -29,12 +31,14 @@ func ExampleIfFalse() {
 	fmt.Println(count)
 	// output: 0
 }
+
 func TestIfFalse(t *testing.T) {
 	got := cstructs.IfFalse()
 	want := 0
 
 	assertCorrectMessageInt(got, want, t)
 }
+
 func ExampleIfInitializationTrue() {
 	count := 0
 	if one := 1; true {
@@ -43,12 +47,14 @@ func ExampleIfInitializationTrue() {
 	fmt.Println(count)
 	// output: 1
 }
+
 func TestIfInitializationTrue(t *testing.T) {
 	got := cstructs.IfInitializationTrue()
 	want := 1
 
 	assertCorrectMessageInt(got, want, t)
 }
+
 func ExampleIfInitializationFalse() {
 	count := 0
 	if one := 1; false {
@@ -57,12 +63,14 @@ func ExampleIfInitializationFalse() {
 	fmt.Println(count)
 	// output: 0
 }
+
 func TestIfInitializationFalse(t *testing.T) {
 	got := cstructs.IfInitializationFalse()
 	want := 0
 
 	assertCorrectMessageInt(got, want, t)
 }
+
 func ExampleIfExpression() {
 	count := 0
 	if i5 < i7 {
@@ -71,12 +79,14 @@ func ExampleIfExpression() {
 	fmt.Println(count)
 	// output: 1
 }
+
 func TestIfExpression(t *testing.T) {
 	got := cstructs.IfExpression()
 	want := 1
 
 	assertCorrectMessageInt(got, want, t)
 }
+
 func ExampleIfElseTrue() {
 	count := 0
 	if true {
@@ -87,12 +97,14 @@ func ExampleIfElseTrue() {
 	fmt.Println(count)
 	// output: 1
 }
+
 func TestIfElseTrue(t *testing.T) {
 	got := cstructs.IfElseTrue()
 	want := 1
 
 	assertCorrectMessageInt(got, want, t)
 }
+
 func ExampleIfElseFalse() {
 	count := 0
 	if false {
@@ -103,12 +115,14 @@ func ExampleIfElseFalse() {
 	fmt.Println(count)
 	// output: -1
 }
+
 func TestIfElseFalse(t *testing.T) {
 	got := cstructs.IfElseFalse()
 	want := -1
 
 	assertCorrectMessageInt(got, want, t)
 }
+
 func ExampleIfElseInitializationFalse() {
 	count := 0
 	if t := 1; false {
@@ -122,12 +136,14 @@ func ExampleIfElseInitializationFalse() {
 	fmt.Println(count)
 	// output: -1
 }
+
 func TestIfElseInitializationFalse(t *testing.T) {
 	got := cstructs.IfElseInitializationFalse()
 	want := -1
 
 	assertCorrectMessageInt(got, want, t)
 }
+
 func ExampleIfElseVariableFalse() {
 	count := 0
 	t := 1
@@ -141,6 +157,7 @@ func ExampleIfElseVariableFalse() {
 	fmt.Println(count)
 	// output: -1
 }
+
 func TestIfElseVariableFalse(t *testing.T) {
 	got := cstructs.IfElseVariableFalse()
 	want := -1

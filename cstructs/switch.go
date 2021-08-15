@@ -13,6 +13,7 @@ func SwitchTrue() string {
 	}
 	return assertion
 }
+
 func Switch() string {
 	switch {
 	case i5 < 5:
@@ -24,6 +25,7 @@ func Switch() string {
 	}
 	return assertion
 }
+
 func SwitchInitializationTrue() string {
 	switch x := 5; true {
 	case i5 < x:
@@ -35,6 +37,7 @@ func SwitchInitializationTrue() string {
 	}
 	return assertion
 }
+
 func SwitchExpressionDefault() string {
 	switch i5 {
 	case 0:
@@ -52,6 +55,7 @@ func SwitchExpressionDefault() string {
 	}
 	return assertion
 }
+
 func SwitchExpressionLeftToRightDefault() string {
 	switch i5 {
 	case 0, 1, 2, 3:
@@ -65,6 +69,7 @@ func SwitchExpressionLeftToRightDefault() string {
 	}
 	return assertion
 }
+
 func SwitchExpressionTopToBottomDefault() string {
 	switch i5 {
 	case 0:
@@ -80,6 +85,7 @@ func SwitchExpressionTopToBottomDefault() string {
 	}
 	return assertion
 }
+
 func SwitchExpressionFallthroughDefault() string {
 	switch i5 {
 	case 0:
@@ -113,6 +119,7 @@ func SwitchExpressionFallthroughDefault() string {
 	}
 	return assertion
 }
+
 func SwitchVariableExpressionFallthroughDefault() string {
 	count := 0
 	switch i5 {
@@ -152,6 +159,7 @@ func SwitchVariableExpressionFallthroughDefault() string {
 	}
 	return assertion
 }
+
 func SwitchExpressionHelloDefault() string {
 	switch hello {
 	case "wowie":
@@ -165,6 +173,7 @@ func SwitchExpressionHelloDefault() string {
 	}
 	return assertion
 }
+
 func SwitchExpressionDefaultVariable() bool {
 	fired := false
 	switch i := i5 + 2; i {
@@ -175,6 +184,7 @@ func SwitchExpressionDefaultVariable() bool {
 	}
 	return fired
 }
+
 func SwitchDefault() bool {
 	fired := false
 	switch {
