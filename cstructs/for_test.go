@@ -57,3 +57,20 @@ func TestForClause(t *testing.T) {
 
 	assertCorrectMessageInt(got, want, t)
 }
+
+func ExampleForClausePostStmtAbsent() {
+	sum = 0
+	for i := 0; i <= 10; {
+		sum = sum + i
+		i++
+	}
+	fmt.Println(sum)
+	// output: 55
+}
+
+func TestForClausePostStmtAbsent(t *testing.T) {
+	got := cstructs.ForClausePostStmtAbsent()
+	want := 55
+
+	assertCorrectMessageInt(got, want, t)
+}

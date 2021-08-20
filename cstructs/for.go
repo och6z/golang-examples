@@ -26,3 +26,12 @@ func ForClause() int {
 	}
 	return sum
 }
+
+func ForClausePostStmtAbsent() int {
+	sum = 0
+	for i := 0; i <= 10; {
+		sum = sum + i
+		i++
+	}
+	return sum
+}
