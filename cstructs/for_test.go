@@ -41,3 +41,19 @@ func TestForCondition(t *testing.T) {
 
 	assertCorrectMessageInt(got, want, t)
 }
+
+func ExampleForClause() {
+	sum = 0
+	for i := 0; i <= 10; i++ {
+		sum = sum + i
+	}
+	fmt.Println(sum)
+	// output: 55
+}
+
+func TestForClause(t *testing.T) {
+	got := cstructs.ForClause()
+	want := 55
+
+	assertCorrectMessageInt(got, want, t)
+}
