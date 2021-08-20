@@ -26,6 +26,8 @@ var (
 
 // For
 var (
-	i = 0
-	I = i
+	i   = 0
+	I   = i
+	sum = 0
+	Sum = sum
 )

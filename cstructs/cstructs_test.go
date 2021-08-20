@@ -39,5 +39,6 @@ func assertCorrectMessageBool(got, want bool, t *testing.T) {
 
 // For
 var (
-	i = cstructs.I
+	i   = cstructs.I
+	sum = cstructs.Sum
 )
