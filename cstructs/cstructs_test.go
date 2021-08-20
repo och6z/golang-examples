@@ -36,3 +36,8 @@ func assertCorrectMessageBool(got, want bool, t *testing.T) {
 		t.Errorf("got %t want %t", got, want)
 	}
 }
+
+// For
+var (
+	i = cstructs.I
+)
