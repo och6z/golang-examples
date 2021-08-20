@@ -7,7 +7,7 @@ import (
 	"example.com/m/cstructs"
 )
 
-func ExampleForSingleConditionAbsent() {
+func ExampleForConditionAbsent() {
 	i = 0
 	for {
 		i = i + 1
@@ -19,14 +19,14 @@ func ExampleForSingleConditionAbsent() {
 	// output: 6
 }
 
-func TestForSingleConditionAbsent(t *testing.T) {
-	got := cstructs.ForSingleConditionAbsent()
+func TestForConditionAbsent(t *testing.T) {
+	got := cstructs.ForConditionAbsent()
 	want := 6
 
 	assertCorrectMessageInt(got, want, t)
 }
 
-func ExampleForSingleCondition() {
+func ExampleForCondition() {
 	sum = 0
 	for sum < 100 {
 		sum = sum + 9
@@ -35,8 +35,8 @@ func ExampleForSingleCondition() {
 	// output: 108
 }
 
-func TestForSingleCondition(t *testing.T) {
-	got := cstructs.ForSingleCondition()
+func TestForCondition(t *testing.T) {
+	got := cstructs.ForCondition()
 	want := 99 + 9
 
 	assertCorrectMessageInt(got, want, t)

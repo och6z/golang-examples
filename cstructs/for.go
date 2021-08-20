@@ -1,6 +1,6 @@
 package cstructs
 
-func ForSingleConditionAbsent() int {
+func ForConditionAbsent() int {
 	i = 0
 	for {
 		i = i + 1
@@ -11,7 +11,7 @@ func ForSingleConditionAbsent() int {
 	return i
 }
 
-func ForSingleCondition() int {
+func ForCondition() int {
 	sum = 0
 	for sum < 100 {
 		sum = sum + 9
