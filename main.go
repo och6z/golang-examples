@@ -19,4 +19,7 @@ func main() {
 	fmt.Println(cstructs.IfElseFalse())
 	fmt.Println(cstructs.IfElseInitializationFalse())
 	fmt.Println(cstructs.IfElseVariableFalse())
+	fmt.Println(cstructs.SwitchExpressionLeftToRightDefault())
+	fmt.Println(cstructs.SwitchExpressionTopToBottomDefault())
+	fmt.Println(cstructs.SwitchExpressionHelloDefault())
 }
