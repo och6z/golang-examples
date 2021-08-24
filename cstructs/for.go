@@ -35,3 +35,11 @@ func ForClausePostStmtAbsent() int {
 	}
 	return sum
 }
+
+func ForRangeClauseArray() int {
+	sum = 0
+	for _, value := range []int{0, 1, 2, 3, 4} {
+		sum += value
+	}
+	return sum
+}
