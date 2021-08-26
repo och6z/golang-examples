@@ -93,7 +93,8 @@ func TestForRangeClauseArray(t *testing.T) {
 
 func ExampleForRangeClauseSlice() {
 	sum = 0
-	for _, value := range []int{0, 1, 2, 3, 4} {
+	arr := [6]int{0, 1, 2, 3, 4, 5}
+	for _, value := range arr[0:5] {
 		sum += value
 	}
 	fmt.Println(sum)
