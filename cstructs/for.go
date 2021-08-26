@@ -36,9 +36,18 @@ func ForClausePostStmtAbsent() int {
 	return sum
 }
 
+func ForRangeClauseArray() int {
+	sum = 0
+	for _, value := range [5]int{0, 1, 2, 3, 4} {
+		sum += value
+	}
+	return sum
+}
+
 func ForRangeClauseSlice() int {
 	sum = 0
-	for _, value := range []int{0, 1, 2, 3, 4} {
+	arr := [6]int{0, 1, 2, 3, 4, 5}
+	for _, value := range arr[0:5] {
 		sum += value
 	}
 	return sum
