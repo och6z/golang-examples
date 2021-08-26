@@ -75,7 +75,7 @@ func TestForClausePostStmtAbsent(t *testing.T) {
 	assertCorrectMessageInt(got, want, t)
 }
 
-func ExampleForRangeClauseArray() {
+func ExampleForRangeClauseSlice() {
 	sum = 0
 	for _, value := range []int{0, 1, 2, 3, 4} {
 		sum += value
@@ -84,8 +84,8 @@ func ExampleForRangeClauseArray() {
 	// output: 10
 }
 
-func TestForRangeClauseArray(t *testing.T) {
-	got := cstructs.ForRangeClauseArray()
+func TestForRangeClauseSlice(t *testing.T) {
+	got := cstructs.ForRangeClauseSlice()
 	want := 10
 
 	assertCorrectMessageInt(got, want, t)
