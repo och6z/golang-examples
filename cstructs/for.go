@@ -52,3 +52,11 @@ func ForRangeClauseSlice() int {
 	}
 	return sum
 }
+
+func ForRangeClauseString() string {
+	var assertion []byte
+	for _, rn := range assert() {
+		assertion = append(assertion, byte(rn))
+	}
+	return string(assertion)
+}

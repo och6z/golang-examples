@@ -107,3 +107,17 @@ func TestForRangeClauseSlice(t *testing.T) {
 
 	assertCorrectMessageInt(got, want, t)
 }
+
+func ExampleForRangeClauseString() {
+	for _, rn := range "assertion true" {
+		fmt.Print(string(rn))
+	}
+	// output: assertion true
+}
+
+func TestForRangeClauseString(t *testing.T) {
+	got := cstructs.ForRangeClauseString()
+	want := "assertion true"
+
+	assertCorrectMessage(got, want, t)
+}
