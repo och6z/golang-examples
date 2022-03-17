@@ -12,7 +12,7 @@ if true {
 fmt.Println(count)
 ```
 
- Output:
+Output:
 
 ```
 1
@@ -28,7 +28,7 @@ if false {
 fmt.Println(count)
 ```
 
- Output:
+Output:
 
 ```
 0
@@ -44,7 +44,7 @@ if one := 1; true {
 fmt.Println(count)
 ```
 
- Output:
+Output:
 
 ```
 1
@@ -60,7 +60,7 @@ if one := 1; false {
 fmt.Println(count)
 ```
 
- Output:
+Output:
 
 ```
 0
@@ -76,7 +76,7 @@ if i5 < i7 {
 fmt.Println(count)
 ```
 
- Output:
+Output:
 
 ```
 1
@@ -94,7 +94,7 @@ if true {
 fmt.Println(count)
 ```
 
- Output:
+Output:
 
 ```
 1
@@ -112,7 +112,7 @@ if false {
 fmt.Println(count)
 ```
 
- Output:
+Output:
 
 ```
 -1
@@ -133,7 +133,7 @@ if t := 1; false {
 fmt.Println(count)
 ```
 
- Output:
+Output:
 
 ```
 -1
@@ -154,7 +154,7 @@ if false {
 fmt.Println(count)
 ```
 
- Output:
+Output:
 
 ```
 -1
@@ -184,7 +184,7 @@ case i5 > 5:
 }
 ```
 
- Output:
+Output:
 
 ```
 assertion true
@@ -203,7 +203,7 @@ case i5 > 5:
 }
 ```
 
- Output:
+Output:
 
 ```
 assertion true
@@ -222,7 +222,7 @@ case i5 > x:
 }
 ```
 
- Output:
+Output:
 
 ```
 assertion true
@@ -247,7 +247,7 @@ default:
 }
 ```
 
- Output:
+Output:
 
 ```
 assertion default
@@ -268,7 +268,7 @@ default:
 }
 ```
 
- Output:
+Output:
 
 ```
 assertion true
@@ -291,7 +291,7 @@ default:
 }
 ```
 
- Output:
+Output:
 
 ```
 assertion true
@@ -332,7 +332,7 @@ default:
 }
 ```
 
- Output:
+Output:
 
 ```
 assertion default
@@ -379,7 +379,7 @@ default:
 }
 ```
 
- Output:
+Output:
 
 ```
 assertion default
@@ -401,7 +401,7 @@ default:
 }
 ```
 
- Output:
+Output:
 
 ```
 assertion true
@@ -420,7 +420,7 @@ default:
 fmt.Println(fired)
 ```
 
- Output:
+Output:
 
 ```
 true
@@ -437,7 +437,7 @@ default:
 fmt.Println(fired)
 ```
 
- Output:
+Output:
 
 ```
 true
