@@ -9,7 +9,7 @@ package names
 ```
 
 The visibility of a name outside a package is determined
-by whether its first character is upper case.  
+by whether its first character is upper case.
 Use `HelloWorld` or `helloWorld` to write multiword names.
 
 ```golang
@@ -26,7 +26,7 @@ const (
 fmt.Println(HelloWorldPrefix + helloWorld)
 ```
 
- Output:
+Output:
 
 ```
 Hello, world!
@@ -38,7 +38,7 @@ Hello, world!
 fmt.Println(Helloworld())
 ```
 
- Output:
+Output:
 
 ```
 Hello, world!
