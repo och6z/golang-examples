@@ -33,7 +33,7 @@ jobs:
       - name: Hadolint
         uses: hadolint/hadolint-action@v1.6.0
         with:
-          dockerfile: Containerfile
+          dockerfile: .devcontainer/Containerfile.alpine
 
   scan:
     name: Scan config files for vulnerabilities
