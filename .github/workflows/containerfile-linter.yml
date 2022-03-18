@@ -6,7 +6,7 @@ on:
     branches:
       - "main"
     paths:
-      - "Containerfile"
+      - ".devcontainer/Containerfile.*"
 
 concurrency:
   group: ${{ github.ref }}-${{ github.workflow }}
