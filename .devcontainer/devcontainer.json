@@ -1,0 +1,42 @@
+{
+	"name": "golang-dev",
+	"build": {
+		"dockerfile": "Containerfile.alpine",
+		"args": {
+			"USER_UID": "1000",
+			"USERNAME": "vscode",
+			"VARIANT": "alpine"
+		}
+	},
+	"settings": {
+		"code-eol": {
+			"decorateBeforeEol": true,
+			"highlightExtraWhitespace": true,
+			"highlightNonDefault": true
+		},
+		"editor": {
+			"formatOnPaste": true,
+			"formatOnSave": true,
+			"renderControlCharacters": true,
+			"renderWhitespace": "all",
+			"wordWrap": "wordWrapColumn",
+			"wordWrapColumn": 132
+		},
+		"files.associations": {
+			"*.json": "jsonc"
+		}
+	},
+	"extensions": [
+		"golang.Go",
+		"ms-dotnettools.vscode-dotnet-pack",
+		"editorconfig.editorconfig",
+		"medo64.render-crlf"
+	],
+	"remoteUser": "vscode",
+
+	"workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,Z",
+	"workspaceFolder": "/workspace",
+
+	"runArgs": ["--init", "--userns=keep-id", "--name=golang-dev"],
+	"containerUser": "vscode"
+}
