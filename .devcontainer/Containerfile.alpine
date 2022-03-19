@@ -4,12 +4,20 @@ FROM docker.io/library/golang:$VARIANT
 RUN apk update \
     && apk add --no-cache sudo \
     && go install -v golang.org/x/tools/gopls@latest \
+    && go install -v github.com/ramya-rao-a/go-outline@latest \
+    && rm -rf /var/cache/apk/*
+
+SHELL ["/bin/ash", "-eo", "pipefail", "-c"]
+RUN apk update \
+    && apk add --no-cache curl \
+    && curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b "$(go env GOPATH)"/bin \
     && rm -rf /var/cache/apk/*
 
 ARG USERNAME=vscode
 ARG USER_UID=1000
 ARG USER_GID=$USER_UID
 
+SHELL ["/bin/sh", "-c"]
 RUN addgroup --gid $USER_GID $USERNAME \
     && adduser -G $USERNAME \
     -h /home/$USERNAME \
