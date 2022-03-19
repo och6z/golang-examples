@@ -9,21 +9,21 @@
 		}
 	},
 	"settings": {
-		"code-eol": {
-			"decorateBeforeEol": true,
-			"highlightExtraWhitespace": true,
-			"highlightNonDefault": true
+		"[go]": {
+			"editor.defaultFormatter": "golang.go"
 		},
-		"editor": {
-			"formatOnPaste": true,
-			"formatOnSave": true,
-			"renderControlCharacters": true,
-			"renderWhitespace": "all",
-			"wordWrap": "wordWrapColumn",
-			"wordWrapColumn": 132
-		},
+		"code-eol.decorateBeforeEol": true,
+		"code-eol.highlightExtraWhitespace": true,
+		"code-eol.highlightNonDefault": true,
 		"files.associations": {
 			"*.json": "jsonc"
+		},
+		"go.lintFlags": [
+			"--fast"
+		],
+		"go.lintTool": "golangci-lint",
+		"gopls": {
+			"formatting.gofumpt": true
 		}
 	},
 	"extensions": [
