@@ -27,9 +27,8 @@
 		}
 	},
 	"extensions": [
-		"golang.Go",
-		"ms-dotnettools.vscode-dotnet-pack",
 		"editorconfig.editorconfig",
+		"golang.Go",
 		"medo64.render-crlf"
 	],
 	"remoteUser": "vscode",
