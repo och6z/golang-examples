@@ -29,7 +29,8 @@
 	"extensions": [
 		"editorconfig.editorconfig",
 		"golang.Go",
-		"medo64.render-crlf"
+		"medo64.render-crlf",
+		"oderwat.indent-rainbow"
 	],
 	"remoteUser": "vscode",
 
