@@ -23,7 +23,7 @@ func TestSwitchTrue(t *testing.T) {
 	got := cstructs.SwitchTrue()
 	want := "assertion true"
 
-	assertCorrectMessage(got, want, t)
+	assertCorrectMessage(t, got, want)
 }
 
 func ExampleSwitch() {
@@ -42,7 +42,7 @@ func TestSwitch(t *testing.T) {
 	got := cstructs.Switch()
 	want := "assertion true"
 
-	assertCorrectMessage(got, want, t)
+	assertCorrectMessage(t, got, want)
 }
 
 func ExampleSwitchInitializationTrue() {
@@ -61,7 +61,7 @@ func TestSwitchInitializationTrue(t *testing.T) {
 	got := cstructs.SwitchInitializationTrue()
 	want := "assertion true"
 
-	assertCorrectMessage(got, want, t)
+	assertCorrectMessage(t, got, want)
 }
 
 func ExampleSwitchExpressionDefault() {
@@ -107,7 +107,7 @@ func TestSwitchExpressionLeftToRightDefault(t *testing.T) {
 	got := cstructs.SwitchExpressionLeftToRightDefault()
 	want := "assertion true"
 
-	assertCorrectMessage(got, want, t)
+	assertCorrectMessage(t, got, want)
 }
 
 func ExampleSwitchExpressionTopToBottomDefault() {
@@ -130,7 +130,7 @@ func TestSwitchExpressionTopToBottomDefault(t *testing.T) {
 	got := cstructs.SwitchExpressionTopToBottomDefault()
 	want := "assertion true"
 
-	assertCorrectMessage(got, want, t)
+	assertCorrectMessage(t, got, want)
 }
 
 func ExampleSwitchExpressionFallthroughDefault() {
@@ -240,7 +240,7 @@ func TestSwitchExpressionHelloDefault(t *testing.T) {
 	got := cstructs.SwitchExpressionHelloDefault()
 	want := "assertion true"
 
-	assertCorrectMessage(got, want, t)
+	assertCorrectMessage(t, got, want)
 }
 
 func ExampleSwitchExpressionDefaultVariable() {
@@ -259,7 +259,7 @@ func TestSwitchExpressionDefaultVariable(t *testing.T) {
 	got := cstructs.SwitchExpressionDefaultVariable()
 	want := true
 
-	assertCorrectMessageBool(got, want, t)
+	assertCorrectMessageBool(t, got, want)
 }
 
 func ExampleSwitchDefault() {
@@ -276,5 +276,5 @@ func TestSwitchDefault(t *testing.T) {
 	got := cstructs.SwitchDefault()
 	want := true
 
-	assertCorrectMessageBool(got, want, t)
+	assertCorrectMessageBool(t, got, want)
 }

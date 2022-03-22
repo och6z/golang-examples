@@ -11,7 +11,8 @@ var (
 	HelloWorldPrefix = cstructs.HelloWorldPrefix
 )
 
-func assertCorrectMessageInt(got, want int, t *testing.T) {
+func assertCorrectMessageInt(t *testing.T, got, want int) {
+	t.Helper()
 	if got != want {
 		t.Errorf("got %d want %d", got, want)
 	}
@@ -25,13 +26,15 @@ var (
 	i7        = cstructs.I7
 )
 
-func assertCorrectMessage(got, want string, t *testing.T) {
+func assertCorrectMessage(t *testing.T, got, want string) {
+	t.Helper()
 	if got != want {
 		t.Errorf("got %q want %q", got, want)
 	}
 }
 
-func assertCorrectMessageBool(got, want bool, t *testing.T) {
+func assertCorrectMessageBool(t *testing.T, got, want bool) {
+	t.Helper()
 	if got != want {
 		t.Errorf("got %t want %t", got, want)
 	}
