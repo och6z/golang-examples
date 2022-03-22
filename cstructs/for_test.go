@@ -23,7 +23,7 @@ func TestForConditionAbsent(t *testing.T) {
 	got := cstructs.ForConditionAbsent()
 	want := 6
 
-	assertCorrectMessageInt(got, want, t)
+	assertCorrectMessageInt(t, got, want)
 }
 
 func ExampleForCondition() {
@@ -39,7 +39,7 @@ func TestForCondition(t *testing.T) {
 	got := cstructs.ForCondition()
 	want := 99 + 9
 
-	assertCorrectMessageInt(got, want, t)
+	assertCorrectMessageInt(t, got, want)
 }
 
 func ExampleForClause() {
@@ -55,7 +55,7 @@ func TestForClause(t *testing.T) {
 	got := cstructs.ForClause()
 	want := 55
 
-	assertCorrectMessageInt(got, want, t)
+	assertCorrectMessageInt(t, got, want)
 }
 
 func ExampleForClausePostStmtAbsent() {
@@ -72,7 +72,7 @@ func TestForClausePostStmtAbsent(t *testing.T) {
 	got := cstructs.ForClausePostStmtAbsent()
 	want := 55
 
-	assertCorrectMessageInt(got, want, t)
+	assertCorrectMessageInt(t, got, want)
 }
 
 func ExampleForRangeClauseArray() {
@@ -88,7 +88,7 @@ func TestForRangeClauseArray(t *testing.T) {
 	got := cstructs.ForRangeClauseArray()
 	want := 10
 
-	assertCorrectMessageInt(got, want, t)
+	assertCorrectMessageInt(t, got, want)
 }
 
 func ExampleForRangeClauseSlice() {
@@ -105,7 +105,7 @@ func TestForRangeClauseSlice(t *testing.T) {
 	got := cstructs.ForRangeClauseSlice()
 	want := 10
 
-	assertCorrectMessageInt(got, want, t)
+	assertCorrectMessageInt(t, got, want)
 }
 
 func ExampleForRangeClauseString() {
@@ -119,5 +119,5 @@ func TestForRangeClauseString(t *testing.T) {
 	got := cstructs.ForRangeClauseString()
 	want := "assertion true"
 
-	assertCorrectMessage(got, want, t)
+	assertCorrectMessage(t, got, want)
 }

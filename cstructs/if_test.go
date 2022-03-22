@@ -20,7 +20,7 @@ func TestIfTrue(t *testing.T) {
 	got := cstructs.IfTrue()
 	want := 1
 
-	assertCorrectMessageInt(got, want, t)
+	assertCorrectMessageInt(t, got, want)
 }
 
 func ExampleIfFalse() {
@@ -36,7 +36,7 @@ func TestIfFalse(t *testing.T) {
 	got := cstructs.IfFalse()
 	want := 0
 
-	assertCorrectMessageInt(got, want, t)
+	assertCorrectMessageInt(t, got, want)
 }
 
 func ExampleIfInitializationTrue() {
@@ -52,7 +52,7 @@ func TestIfInitializationTrue(t *testing.T) {
 	got := cstructs.IfInitializationTrue()
 	want := 1
 
-	assertCorrectMessageInt(got, want, t)
+	assertCorrectMessageInt(t, got, want)
 }
 
 func ExampleIfInitializationFalse() {
@@ -68,7 +68,7 @@ func TestIfInitializationFalse(t *testing.T) {
 	got := cstructs.IfInitializationFalse()
 	want := 0
 
-	assertCorrectMessageInt(got, want, t)
+	assertCorrectMessageInt(t, got, want)
 }
 
 func ExampleIfExpression() {
@@ -84,7 +84,7 @@ func TestIfExpression(t *testing.T) {
 	got := cstructs.IfExpression()
 	want := 1
 
-	assertCorrectMessageInt(got, want, t)
+	assertCorrectMessageInt(t, got, want)
 }
 
 func ExampleIfElseTrue() {
@@ -102,7 +102,7 @@ func TestIfElseTrue(t *testing.T) {
 	got := cstructs.IfElseTrue()
 	want := 1
 
-	assertCorrectMessageInt(got, want, t)
+	assertCorrectMessageInt(t, got, want)
 }
 
 func ExampleIfElseFalse() {
@@ -120,7 +120,7 @@ func TestIfElseFalse(t *testing.T) {
 	got := cstructs.IfElseFalse()
 	want := -1
 
-	assertCorrectMessageInt(got, want, t)
+	assertCorrectMessageInt(t, got, want)
 }
 
 func ExampleIfElseInitializationFalse() {
@@ -141,7 +141,7 @@ func TestIfElseInitializationFalse(t *testing.T) {
 	got := cstructs.IfElseInitializationFalse()
 	want := -1
 
-	assertCorrectMessageInt(got, want, t)
+	assertCorrectMessageInt(t, got, want)
 }
 
 func ExampleIfElseVariableFalse() {
@@ -162,5 +162,5 @@ func TestIfElseVariableFalse(t *testing.T) {
 	got := cstructs.IfElseVariableFalse()
 	want := -1
 
-	assertCorrectMessageInt(got, want, t)
+	assertCorrectMessageInt(t, got, want)
 }

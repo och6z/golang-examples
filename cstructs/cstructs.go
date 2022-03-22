@@ -24,6 +24,10 @@ var (
 	I7        = i7
 )
 
+const (
+	assertionDefault = "assertion default"
+)
+
 // For
 var (
 	i   = 0

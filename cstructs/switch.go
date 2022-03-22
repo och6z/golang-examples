@@ -51,7 +51,7 @@ func SwitchExpressionDefault() string {
 	case 4:
 		assertion = assert()
 	default:
-		assertion = "assertion default"
+		assertion = assertionDefault
 	}
 	return assertion
 }
@@ -65,7 +65,7 @@ func SwitchExpressionLeftToRightDefault() string {
 	case 8, 9:
 		assertion = assert()
 	default:
-		assertion = "assertion default"
+		assertion = assertionDefault
 	}
 	return assertion
 }
@@ -81,7 +81,7 @@ func SwitchExpressionTopToBottomDefault() string {
 	case 5:
 		assertion = assert()
 	default:
-		assertion = "assertion default"
+		assertion = assertionDefault
 	}
 	return assertion
 }
@@ -169,7 +169,7 @@ func SwitchExpressionHelloDefault() string {
 	case "jumpn":
 		assertion = assert()
 	default:
-		assertion = "assertion default"
+		assertion = assertionDefault
 	}
 	return assertion
 }
