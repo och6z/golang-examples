@@ -14,7 +14,7 @@ fmt.Println(count)
 
 Output:
 
-```
+```bash
 1
 ```
 
@@ -30,7 +30,7 @@ fmt.Println(count)
 
 Output:
 
-```
+```bash
 0
 ```
 
@@ -46,7 +46,7 @@ fmt.Println(count)
 
 Output:
 
-```
+```bash
 1
 ```
 
@@ -62,7 +62,7 @@ fmt.Println(count)
 
 Output:
 
-```
+```bash
 0
 ```
 
@@ -78,7 +78,7 @@ fmt.Println(count)
 
 Output:
 
-```
+```bash
 1
 ```
 
@@ -96,7 +96,7 @@ fmt.Println(count)
 
 Output:
 
-```
+```bash
 1
 ```
 
@@ -114,7 +114,7 @@ fmt.Println(count)
 
 Output:
 
-```
+```bash
 -1
 ```
 
@@ -135,7 +135,7 @@ fmt.Println(count)
 
 Output:
 
-```
+```bash
 -1
 ```
 
@@ -156,7 +156,7 @@ fmt.Println(count)
 
 Output:
 
-```
+```bash
 -1
 ```
 
@@ -186,7 +186,7 @@ case i5 > 5:
 
 Output:
 
-```
+```bash
 assertion true
 ```
 
@@ -205,7 +205,7 @@ case i5 > 5:
 
 Output:
 
-```
+```bash
 assertion true
 ```
 
@@ -224,7 +224,7 @@ case i5 > x:
 
 Output:
 
-```
+```bash
 assertion true
 ```
 
@@ -249,7 +249,7 @@ default:
 
 Output:
 
-```
+```bash
 assertion default
 ```
 
@@ -270,7 +270,7 @@ default:
 
 Output:
 
-```
+```bash
 assertion true
 ```
 
@@ -293,7 +293,7 @@ default:
 
 Output:
 
-```
+```bash
 assertion true
 ```
 
@@ -334,7 +334,7 @@ default:
 
 Output:
 
-```
+```bash
 assertion default
 ```
 
@@ -381,7 +381,7 @@ default:
 
 Output:
 
-```
+```bash
 assertion default
 6
 ```
@@ -403,7 +403,7 @@ default:
 
 Output:
 
-```
+```bash
 assertion true
 ```
 
@@ -422,7 +422,7 @@ fmt.Println(fired)
 
 Output:
 
-```
+```bash
 true
 ```
 
@@ -439,6 +439,6 @@ fmt.Println(fired)
 
 Output:
 
-```
+```bash
 true
 ```
