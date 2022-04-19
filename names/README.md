@@ -20,7 +20,7 @@ const (
 )
 ```
 
-### Helloworld
+### HelloworldPrefix
 
 ```golang
 fmt.Println(HelloWorldPrefix + helloWorld)
@@ -28,7 +28,7 @@ fmt.Println(HelloWorldPrefix + helloWorld)
 
 Output:
 
-```
+```bash
 Hello, world!
 ```
 
@@ -40,6 +40,6 @@ fmt.Println(Helloworld())
 
 Output:
 
-```
+```bash
 Hello, world!
 ```
