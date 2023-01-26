@@ -47,7 +47,7 @@ jobs:
           go-version: ${{ matrix.go }}
 
       - name: Golang lint
-        uses: golangci/golangci-lint-action@v3.2.0
+        uses: golangci/golangci-lint-action@v3.4.0
         with:
           args: ./...
           github-token: ${{ secrets.GITHUB_TOKEN }}
